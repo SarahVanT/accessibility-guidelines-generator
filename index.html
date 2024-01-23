@@ -29,7 +29,7 @@
           <!-- <h1>Accessibility Guidelines Generator</h1>
           <p>Learn how to make your website accessible.</p> -->
           <h2>About WCAG</h2>
-          <p>
+          <!-- <p>
             The Web Content Accessibility Guidelines (WCAG) are guidelines
             designed to make the web accessible to everyone, including people
             with various disabilities. This Accessibility Guidelines Generator
@@ -37,6 +37,14 @@
             accessibility. Just select a category from the options provided,
             click the 'Generate' button to submit your choice, and the tool will
             offer practical tips aligned with WCAG standards.
+          </p> -->
+          <p>
+            The Web Content Accessibility Guidelines (WCAG) aim to make the web
+            accessible to everyone, including people with disabilities. This AI
+            generator helps you improve your website's accessibility. Simply
+            choose a category from the options provided, click the 'Generate
+            Guidelines' button, and the tool will provide practical tips that
+            align with WCAG standards.
           </p>
           <p>
             For more detailed information on WCAG, please visit
@@ -53,58 +61,83 @@
       </div>
     </header>
 
-    <!-- <section class="container col-xxl-8">
-      <div class="row">
-        <div class="col-lg-8 offset-lg-2"> -->
-    <!-- <h2>About WCAG</h2>
-          <p>
-            The Web Content Accessibility Guidelines (WCAG) are guidelines
-            designed to make the web accessible to everyone, including people
-            with various disabilities. This Accessibility Guidelines Generator
-            provides easy-to-follow guidance for improving web content
-            accessibility. Just select a category from the options provided,
-            click the 'Generate' button to submit your choice, and the tool will
-            offer practical tips aligned with WCAG standards.
-          </p>
-          <p>
-            For more detailed information on WCAG, please visit
-            <a href="https://www.w3.org/WAI/standards-guidelines/wcag/"
-              >the official WCAG guidelines</a
-            >.
-          </p> -->
-    <!-- </div>
-      </div>
-    </section> -->
-
     <form id="guidelineForm" class="container col-xxl-8 mt-5">
       <div class="row">
         <div class="col-lg-8 offset-lg-2">
           <fieldset>
             <legend>Select a Category:</legend>
+            <div class="d-flex flex-column">
+              <div class="custom-radio">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    id="color"
+                    name="category"
+                    value="color"
+                  />
+                  <label class="form-check-label" for="color">Color</label>
+                </div>
+              </div>
+              <div class="custom-radio">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    id="images"
+                    name="category"
+                    value="images"
+                  />
+                  <label class="form-check-label" for="images">Images</label>
+                </div>
+              </div>
+              <div class="custom-radio">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    id="forms"
+                    name="category"
+                    value="forms"
+                  />
+                  <label class="form-check-label" for="forms">Forms</label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
 
-            <div class="form-check">
+          <!-- <fieldset>
+            <legend>Select a Category:</legend>
+
+            
+
+          
+
+            <div class="form-check mb-3">
               <input
                 class="form-check-input"
                 type="radio"
                 name="category"
-                id="color"
-                value="color"
+                id="forms"
+                value="forms"
               />
-              <label class="form-check-label" for="color">Color</label>
+              <label class="form-check-label" for="forms">Forms</label>
             </div>
 
-            <div class="form-check">
+            <div class="form-check mb-3">
               <input
                 class="form-check-input"
                 type="radio"
                 name="category"
-                id="images"
-                value="images"
+                id="navigation"
+                value="navigation"
               />
-              <label class="form-check-label" for="images">Images</label>
+              <label class="form-check-label" for="navigation"
+                >Navigation</label
+              >
             </div>
 
-            <div class="form-check">
+            <div class="form-check mb-3">
               <input
                 class="form-check-input"
                 type="radio"
@@ -117,17 +150,20 @@
               >
             </div>
 
-            <!-- Additional categories as radio buttons -->
+            
           </fieldset>
           <button type="submit" class="btn btn-primary mt-3">
             Generate Guidelines
-          </button>
+          </button> -->
         </div>
       </div>
     </form>
 
-    <div id="apiResponse" class="container text-center">
-      <!-- API responses will be displayed here -->
+    <div id="aiGeneratedContent" class="container col-xxl-8 text-center mt-4">
+      <h2>Generated Accessibility Guidelines</h2>
+      <div id="guidelinesOutput" class="p-4 border rounded">
+        <!-- AI-generated content will appear here -->
+      </div>
     </div>
     <footer></footer>
     <script src="src/index.js"></script>
