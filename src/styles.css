@@ -94,8 +94,8 @@ a:focus {
 .custom-radio {
   display: inline-block;
   /* Adjust the width and padding as desired */
-  max-width: 8rem;
-  padding: 10px 10px 10px 15px;
+  width: fit-content;
+  padding: 0.213rem 0.213rem 0.313rem 0.838rem;
 }
 
 .custom-radio input[type="radio"] {
@@ -103,12 +103,12 @@ a:focus {
 }
 
 .custom-radio:focus-within {
-  outline: 2px solid black;
+  outline: 2px solid #0a0a24;
   outline-offset: -2px;
 }
 
 .custom-radio .form-check {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.7rem;
 }
