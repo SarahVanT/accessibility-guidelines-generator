@@ -19,6 +19,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="src/queries.css" />
   </head>
   <body>
     <!-- <header class="header">
@@ -27,29 +28,48 @@
       </div>
     </header> -->
     <div class="central-container">
-      <header class="container col-xxl-8 px-large py-4">
+      <div class="card-header w-100" aria-hidden="true">
+        <div class="browser-controls">
+          <span class="browser-dot red-dot" aria-hidden="true"></span>
+          <span class="browser-dot yellow-dot" aria-hidden="true"></span>
+          <span class="browser-dot green-dot" aria-hidden="true"></span>
+        </div>
+        <div class="fake-url-bar" aria-hidden="true">
+          https://ai-accessibility-guidelines-generator.netlify.app/
+        </div>
+        <!-- Optionally, add more elements here like a fake URL bar -->
+      </div>
+      <header class="container px-large py-3 py-md-4">
         <h1 class="text-center py-3">WCAG Generator</h1>
-        <p class="text-start">
-          The Web Content Accessibility Guidelines (WCAG) aim to make the web
-          accessible to everyone, including people with disabilities. This
-          generator uses AI to help you improve your website's accessibility.
-          Simply choose a category from the options provided, click the
-          'Generate Guidelines' button, and the tool will provide practical tips
-          that align with WCAG standards.
-        </p>
-        <p class="text-start">
-          For more detailed information on WCAG, please visit
-          <a
-            href="https://www.w3.org/WAI/standards-guidelines/wcag/"
-            rel="noopener"
-            >the official WCAG guidelines </a
-          >.
-        </p>
+        <div class="text-container d-flex justify-content-center">
+          <p class="text-start w-75">
+            The Web Content Accessibility Guidelines (WCAG) aim to make the web
+            accessible to everyone, including people with disabilities. This
+            generator uses AI to help you improve your website's accessibility.
+            Simply choose a category from the options provided, click the
+            'Generate Guidelines' button, and the tool will provide practical
+            tips that align with WCAG standards.<br />
+            For more detailed information on WCAG, please visit
+            <a
+              href="https://www.w3.org/WAI/standards-guidelines/wcag/"
+              rel="noopener"
+              >the official WCAG guidelines </a
+            >.
+          </p>
+        </div>
+
         <!-- <p>Learn how to make your website accessible.</p> -->
       </header>
-      <form id="guidelineForm" class="container col-xxl-8 px-large py-4">
-        <div class="row align-items-center py-5">
-          <div class="col-lg-4">
+      <form id="guidelineForm" class="container px-large py-3 py-md-4">
+        <div class="row align-items-center py-3 py-md-4">
+          <div class="col-12 col-md-12 col-lg-7 order-lg-2 text-center">
+            <img
+              src="images/marvin-meyer-SYTO3xs06fU-unsplash.jpg"
+              alt=""
+              class="img-medium rounded"
+            />
+          </div>
+          <div class="col-12 col-md-12 col-lg-5 order-lg-1 form-smaller">
             <fieldset>
               <legend>
                 <h2>Select a Category:</h2>
@@ -84,6 +104,18 @@
                     <input
                       class="form-check-input"
                       type="radio"
+                      id="video"
+                      name="category"
+                      value="video"
+                    />
+                    <label class="form-check-label" for="video">Videos</label>
+                  </div>
+                </div>
+                <div class="custom-radio">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
                       id="form"
                       name="category"
                       value="form"
@@ -111,13 +143,6 @@
             <button type="submit" class="btn btn-primary mt-3">
               Generate Guidelines
             </button>
-          </div>
-          <div class="col-lg-8 text-end">
-            <img
-              src="images/marvin-meyer-SYTO3xs06fU-unsplash.jpg"
-              alt=""
-              class="img-medium rounded"
-            />
           </div>
         </div>
       </form>

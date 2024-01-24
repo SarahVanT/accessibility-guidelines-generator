@@ -1,0 +1,46 @@
+@media (max-width: 991px) {
+  .fake-url-bar {
+    width: 60%; /* Allows the URL bar to take more width on smaller screens */
+    padding: 6px 8px; /* Optionally reduce padding on smaller screens */
+  }
+  .px-large {
+    padding: 3.125rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .central-container {
+    margin: 2rem 2rem;
+  }
+
+  .browser-controls {
+    display: none;
+  }
+  .fake-url-bar {
+    width: 80%; /* Allows the URL bar to take more width on smaller screens */
+    padding: 6px 8px; /* Optionally reduce padding on smaller screens */
+  }
+}
+
+@media (max-width: 575px) {
+  .central-container {
+    margin: 1rem 1rem;
+  }
+
+  .fake-url-bar {
+    width: 90%; /* On very small screens, let the URL bar take even more width */
+    padding: 6px 6px; /* Further reduce padding if necessary */
+  }
+
+  .px-large {
+    padding: 1rem;
+  }
+
+  .form-smaller {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: inherit;
+    margin-top: 2rem;
+  }
+}
