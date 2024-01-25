@@ -14,10 +14,24 @@ body {
   font-weight: 500;
 }
 
+.w-90 {
+  width: 90% !important;
+}
+
+.flex-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
 .central-container {
   background-color: #fff; /* White background for the container */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
   margin: 3.125rem 10rem; /* Space around the container */
+}
+
+.container-padding {
+  padding: 3rem;
 }
 
 .card-header {
@@ -87,7 +101,13 @@ h1 {
 }
 
 h2 {
-  font-size: 1.7rem;
+  font-size: 2rem;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5rem;
   line-height: 1.25;
   font-weight: 700;
 }
@@ -135,7 +155,13 @@ a:focus {
 }
 
 .img-medium {
-  width: 90%;
+  width: 50%;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
 }
 
 /* Custom radio button style */
