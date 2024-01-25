@@ -3,8 +3,8 @@
     width: 60%; /* Allows the URL bar to take more width on smaller screens */
     padding: 6px 8px; /* Optionally reduce padding on smaller screens */
   }
-  .px-large {
-    padding: 3.125rem;
+  .central-container {
+    margin: 3rem 3rem;
   }
 
   .flex-container {
@@ -24,22 +24,40 @@
   }
 
   .browser-controls {
-    display: none;
+    gap: 1px;
   }
+
+  .browser-dot {
+    width: 10px;
+    height: 10px;
+  }
+
   .fake-url-bar {
-    width: 80%; /* Allows the URL bar to take more width on smaller screens */
+    width: 70%; /* Allows the URL bar to take more width on smaller screens */
     padding: 6px 8px; /* Optionally reduce padding on smaller screens */
+  }
+  .container-padding {
+    padding: 1.5rem;
   }
 }
 
 @media (max-width: 575px) {
   .central-container {
-    margin: 1rem 1rem;
+    margin: 1rem;
+  }
+
+  .container-padding {
+    padding: 2rem;
+  }
+
+  .browser-dot {
+    width: 10px;
+    height: 10px;
   }
 
   .fake-url-bar {
-    width: 90%; /* On very small screens, let the URL bar take even more width */
-    padding: 6px 6px; /* Further reduce padding if necessary */
+    width: 60%; /* Allows the URL bar to take more width on smaller screens */
+    padding: 5px 5px; /* Optionally reduce padding on smaller screens */
   }
 
   .px-large {
@@ -52,5 +70,9 @@
     justify-content: center;
     align-items: inherit;
     margin-top: 2rem;
+  }
+
+  h1 {
+    font-size: 2.3rem;
   }
 }

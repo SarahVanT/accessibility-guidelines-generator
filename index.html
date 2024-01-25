@@ -22,11 +22,6 @@
     <link rel="stylesheet" href="src/queries.css" />
   </head>
   <body>
-    <!-- <header class="header">
-      <div class="container">
-        <h1 class="text-center py-2 heading-primary">WCAG Generator</h1>
-      </div>
-    </header> -->
     <main>
       <section class="central-container">
         <div class="card-header w-100" aria-hidden="true">
@@ -38,25 +33,28 @@
           <div class="fake-url-bar" aria-hidden="true">
             https://ai-accessibility-guidelines-generator.netlify.app/
           </div>
-          <!-- Optionally, add more elements here like a fake URL bar -->
         </div>
         <section class="container-padding container w-90">
           <section class="introduction-section mb-3 mb-md-5">
             <h1 class="text-center pb-2 pb-md-3">WCAG Generator</h1>
             <div class="text-container d-flex justify-content-center">
               <p class="text-start">
-                The Web Content Accessibility Guidelines (WCAG) aim to make the
-                web accessible to everyone, including people with disabilities.
-                This generator uses AI to help you improve your website's
-                accessibility. Simply choose a category from the options
-                provided, click the 'Generate Guidelines' button, and the tool
-                will provide practical tips that align with WCAG standards.<br />For
-                more detailed information on WCAG, please visit
+                Welcome to the WCAG Generator! I'm here to help you make your
+                web content accessible to everyone, including people with
+                disabilities. The Web Content Accessibility Guidelines (WCAG)
+                are considered the standard in the industry to ensure that
+                digital content is inclusive and accessible for all. Start by
+                selecting a category, click the 'Generate Guidelines' button,
+                and receive tips that follow the WCAG standards. If you want to
+                explore beyond these basics, check out the official
                 <a
                   href="https://www.w3.org/WAI/standards-guidelines/wcag/"
                   rel="noopener"
-                  >the official WCAG guidelines </a
-                >.
+                >
+                  WCAG guidelines</a
+                >. Also, keep in mind that accessibility standards can differ
+                internationally, so it's wise to consult local regulations to
+                ensure your content meets all necessary requirements.
               </p>
             </div>
           </section>
@@ -149,7 +147,11 @@
           </section>
           <section id="aiGeneratedContent" class="results-section mt-3 mt-md-4">
             <h3 class="text-center">Generated Accessibility Guidelines</h3>
-            <p id="guidelinesOutput" class="p-4 border rounded text-start">
+            <p
+              id="guidelinesOutput"
+              class="p-3 border rounded text-start"
+              aria-live="polite"
+            >
               <!-- AI-generated content will appear here -->
             </p>
           </section>

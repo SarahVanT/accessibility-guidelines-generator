@@ -28,6 +28,7 @@ body {
   background-color: #fff; /* White background for the container */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
   margin: 3.125rem 10rem; /* Space around the container */
+  border-radius: 10px;
 }
 
 .container-padding {
@@ -42,6 +43,8 @@ body {
   align-items: center;
   justify-content: center;
   padding: 0 8px;
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
 }
 .browser-controls {
   /* Positioning and styling for the browser tab area */
@@ -163,44 +166,6 @@ a:focus {
   justify-content: center;
   gap: 4rem;
 }
-
-/* Custom radio button style */
-/* .form-check-input {
-  width: 25px; 
-  height: 25px; 
-  cursor: pointer; 
-  accent-color: #007bff; 
-} */
-
-/* Custom label style */
-/* .form-check-label {
-  margin-left: 0.625rem; 
-  cursor: pointer; 
-} */
-
-/* Remove the default focus outline */
-/* .form-check-input:focus {
-  outline: none; 
-  box-shadow: none; 
-} */
-
-/* Custom focus state */
-/* .form-check-input:focus + .form-check-label {
-  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
-  padding: 0.375rem;
-  border-radius: 0.25rem;
-} */
-
-/* To ensure the box-shadow takes effect properly */
-/* .form-check-label {
-  margin-left: 0.3rem;
-} */
-
-/* fieldset {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
 
 .custom-radio {
   display: inline-block;
