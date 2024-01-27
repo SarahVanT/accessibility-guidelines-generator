@@ -67,10 +67,7 @@
                 alt="Person navigating a website."
               />
               <form class="order-lg-1" id="guidelineForm">
-                <fieldset
-                  aria-label="Select one Category:"
-                  aria-required="true"
-                >
+                <fieldset>
                   <legend>Select one Category:</legend>
                   <div class="form-group d-flex flex-column">
                     <div class="custom-radio">
@@ -144,7 +141,7 @@
                 </fieldset>
                 <button
                   type="submit"
-                  class="btn btn-primary mt-3"
+                  class="btn btn-primary btn-lg mt-3"
                   aria-label="Submit category selection and generate guidelines"
                 >
                   Generate guidelines
@@ -156,7 +153,6 @@
             id="aiGeneratedContent"
             class="results-section mt-3 mt-md-4 d-none"
           >
-            <!-- <h3 class="text-center">Generated Accessibility Guidelines</h3> -->
             <p
               id="guidelinesOutput"
               class="p-3 border rounded text-start"
@@ -166,11 +162,12 @@
             </p>
           </section>
         </section>
-        <!-- <footer class="text-center pt-1">
+        <footer class="text-center p-1 d-flex justify-content-center">
           <p id="footer-text">
-            &copy; <span id="current-year"></span> coded by Sarah VanTilburg
+            &copy; <span id="current-year"></span> coded with &#x2764; by Sarah
+            VanTilburg
           </p>
-        </footer> -->
+        </footer>
       </section>
     </main>
     <script src="src/index.js"></script>
@@ -181,141 +178,3 @@
     ></script>
   </body>
 </html>
-
-<!-- <header class="container px-large py-3 py-md-4">
-        <h1 class="text-center py-3">WCAG Generator</h1>
-        <div class="text-container d-flex justify-content-center">
-          <p class="text-start w-75">
-            The Web Content Accessibility Guidelines (WCAG) aim to make the web
-            accessible to everyone, including people with disabilities. This
-            generator uses AI to help you improve your website's accessibility.
-            Simply choose a category from the options provided, click the
-            'Generate Guidelines' button, and the tool will provide practical
-            tips that align with WCAG standards. For more detailed information
-            on WCAG, please visit
-            <a
-              href="https://www.w3.org/WAI/standards-guidelines/wcag/"
-              rel="noopener"
-              >the official WCAG guidelines </a
-            >.
-          </p>
-        </div>
-
-       
-      </header> -->
-<!-- <section class="container px-large py-3 py-md-4">
-          <div class="form-container">
-            <img
-              src="images/marvin-meyer-SYTO3xs06fU-unsplash.jpg"
-              alt=""
-              class="img-medium rounded"
-            />
-            <form>
-              <fieldset>
-                <legend>
-                  <h2>Select a Category:</h2>
-                </legend>
-                <div class="form-group d-flex flex-column">
-                  <div class="custom-radio">
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        id="color"
-                        name="category"
-                        value="color"
-                      />
-                      <label class="form-check-label" for="color">Color</label>
-                    </div>
-                  </div>
-                </div>
-              </fieldset>
-            </form>
-          </div>
-        </section> -->
-<!-- <form id="guidelineForm" class="container px-large py-3 py-md-4">
-          <div class="row align-items-center py-3 py-md-4">
-            <div class="col-12 col-md-12 col-lg-7 order-lg-2 text-center">
-              <img
-                src="images/marvin-meyer-SYTO3xs06fU-unsplash.jpg"
-                alt=""
-                class="img-medium rounded"
-              />
-            </div>
-            <div class="col-12 col-md-12 col-lg-5 order-lg-1 form-smaller">
-              <fieldset>
-                <legend>
-                  <h2>Select a Category:</h2>
-                </legend>
-                <div class="form-group d-flex flex-column">
-                  <div class="custom-radio">
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        id="color"
-                        name="category"
-                        value="color"
-                      />
-                      <label class="form-check-label" for="color">Color</label>
-                    </div>
-                  </div>
-                  <div class="custom-radio">
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        id="image"
-                        name="category"
-                        value="image"
-                      />
-                      <label class="form-check-label" for="image">Images</label>
-                    </div>
-                  </div>
-                  <div class="custom-radio">
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        id="video"
-                        name="category"
-                        value="video"
-                      />
-                      <label class="form-check-label" for="video">Videos</label>
-                    </div>
-                  </div>
-                  <div class="custom-radio">
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        id="form"
-                        name="category"
-                        value="form"
-                      />
-                      <label class="form-check-label" for="form">Forms</label>
-                    </div>
-                  </div>
-                  <div class="custom-radio">
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        id="navigation"
-                        name="category"
-                        value="navigation"
-                      />
-                      <label class="form-check-label" for="navigation"
-                        >Navigation</label
-                      >
-                    </div>
-                  </div>
-                </div>
-              </fieldset>
-
-              <button type="submit" class="btn btn-primary mt-3">
-                Generate Guidelines
-              </button>
-            </div>
-          </div>
-        </form> -->

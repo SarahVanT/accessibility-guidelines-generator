@@ -13,89 +13,6 @@ body {
   font-weight: 500;
 }
 
-.w-90 {
-  width: 90% !important;
-}
-
-.flex-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.central-container {
-  background-color: #fff; /* White background for the container */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*Optional: adds a subtle shadow */
-  margin: 3.125rem 10rem; /* Space around the container */
-  border-radius: 10px;
-}
-
-.container-padding {
-  padding: 3rem 1rem;
-}
-
-.card-header {
-  background: #2a2a36;
-  position: relative;
-  height: 45px; /* Set a fixed height so that it's visible even with no content */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 8px;
-  border-top-left-radius: 10px !important;
-  border-top-right-radius: 10px !important;
-}
-.browser-controls {
-  /* Positioning and styling for the browser tab area */
-  /* position: absolute; */
-  /* position: relative;
-  height: 100%;
-  display: flex;
-  align-items: center; */
-  /* top: 2px;
-  left: 13px; */
-  display: flex;
-  gap: 8px;
-  position: absolute;
-  left: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.browser-dot {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  margin-right: 8px;
-}
-
-.browser-dot:last-child {
-  margin-right: 0; /* Ensures that the last dot doesn't have a margin on the right */
-}
-
-.red-dot {
-  background-color: #ff605c;
-}
-.yellow-dot {
-  background-color: #ffbd44;
-}
-.green-dot {
-  background-color: #00ca4e;
-}
-
-.fake-url-bar {
-  background-color: #e2e2e2; /* Slightly different background for contrast */
-  border-radius: 10px;
-  padding: 3px 10px;
-  width: 70%;
-  color: #333;
-  white-space: nowrap;
-  font-family: monospace;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 h1 {
   font-size: 3rem;
   line-height: 1.25;
@@ -114,15 +31,6 @@ h3 {
   font-weight: 700;
 }
 
-.header {
-  background: black;
-}
-
-.heading-primary {
-  color: white;
-  font-size: 2rem;
-}
-
 p,
 label {
   font-size: 1.125rem;
@@ -130,9 +38,18 @@ label {
   line-height: 1.75;
 }
 
-.btn {
-  font-size: 1.125rem;
-  font-weight: 700;
+legend {
+  font-weight: 600;
+}
+
+footer {
+  background: #2a2a36;
+}
+
+footer p {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 0;
 }
 
 a:link,
@@ -156,6 +73,96 @@ a:focus {
   background-color: #fd0;
 }
 
+.w-90 {
+  width: 90% !important;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.central-container {
+  background-color: #fff; /* White background for the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*Optional: adds a subtle shadow */
+  margin: 3.125rem 10rem; /* Space around the container */
+  border-radius: 10px;
+}
+
+.container-padding {
+  padding: 2rem 1rem;
+}
+
+.card-header {
+  background: #2a2a36;
+  position: relative;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8px;
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+}
+.browser-controls {
+  display: flex;
+  gap: 8px;
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.browser-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.browser-dot:last-child {
+  /* Ensures that the last dot doesn't have a margin on the right */
+  margin-right: 0;
+}
+
+.red-dot {
+  background-color: #ff605c;
+}
+.yellow-dot {
+  background-color: #ffbd44;
+}
+.green-dot {
+  background-color: #00ca4e;
+}
+
+.fake-url-bar {
+  background-color: #e2e2e2;
+  border-radius: 10px;
+  padding: 3px 10px;
+  width: 70%;
+  color: #333;
+  white-space: nowrap;
+  font-family: monospace;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.header {
+  background: black;
+}
+
+.heading-primary {
+  color: white;
+  font-size: 2rem;
+}
+
+.btn {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
 .img-medium {
   width: 50%;
 }
@@ -174,7 +181,6 @@ a:focus {
 }
 
 .custom-radio input[type="radio"] {
-  /* transform: scale(1.5); */
   width: 30px;
   height: 30px;
 }
@@ -193,8 +199,4 @@ a:focus {
 .form-check-input,
 .form-check-label {
   cursor: pointer;
-}
-
-.px-large {
-  padding: 3.125rem;
 }

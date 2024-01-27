@@ -1,12 +1,15 @@
 let prompt;
 let context;
+
+// Changing year in footer to current years
 const currentYear = new Date().getFullYear();
 document.getElementById("current-year").textContent = currentYear;
+
 // Function to handle any errors during the API request
 let handleError = (error) => {
   console.error("Error during API request:", error);
   document.getElementById("guidelinesOutput").innerText =
-    "Error loading guidelines.";
+    "Error loading guidelines, please try again.";
 };
 
 let handleFormSubmit = (event) => {
@@ -33,11 +36,8 @@ let makeAPIRequest = (category) => {
 
   // Show loading message and set focus to it
   const loadingMessage = document.getElementById("guidelinesOutput");
-  loadingMessage.innerText = "Loading Accessibility Guidelines...";
+  loadingMessage.innerText = "Loading accessibility guidelines...";
   loadingMessage.scrollIntoView({ behavior: "smooth" });
-
-  // Set focus to the loading message
-  // loadingMessage.focus();
 
   axios.get(apiURL).then(showAnswer).catch(handleError);
 };
