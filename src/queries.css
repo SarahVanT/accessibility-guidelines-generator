@@ -42,6 +42,14 @@
 }
 
 @media (max-width: 575px) {
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  footer {
+    border-radius: 0px;
+  }
+
   .central-container {
     margin: 0;
     border-radius: 0;
@@ -76,9 +84,5 @@
     justify-content: center;
     align-items: inherit;
     margin-top: 2rem;
-  }
-
-  h1 {
-    font-size: 2.3rem;
   }
 }
