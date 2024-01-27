@@ -5,7 +5,6 @@
 }
 
 body {
-  background: #ffffff;
   background: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
   color: #0a0a24;
   font-family: "Lato", sans-serif;
@@ -20,19 +19,19 @@ body {
 
 .flex-container {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-evenly;
 }
 
 .central-container {
   background-color: #fff; /* White background for the container */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*Optional: adds a subtle shadow */
   margin: 3.125rem 10rem; /* Space around the container */
   border-radius: 10px;
 }
 
 .container-padding {
-  padding: 3rem;
+  padding: 3rem 1rem;
 }
 
 .card-header {
@@ -88,7 +87,7 @@ body {
 .fake-url-bar {
   background-color: #e2e2e2; /* Slightly different background for contrast */
   border-radius: 10px;
-  padding: 6px 12px;
+  padding: 3px 10px;
   width: 70%;
   color: #333;
   white-space: nowrap;

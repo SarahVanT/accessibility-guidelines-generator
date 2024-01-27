@@ -1,7 +1,7 @@
 @media (max-width: 991px) {
   .fake-url-bar {
     width: 60%; /* Allows the URL bar to take more width on smaller screens */
-    padding: 6px 8px; /* Optionally reduce padding on smaller screens */
+    padding: 3px 8px; /* Optionally reduce padding on smaller screens */
   }
   .central-container {
     margin: 3rem 3rem;
@@ -34,7 +34,7 @@
 
   .fake-url-bar {
     width: 70%; /* Allows the URL bar to take more width on smaller screens */
-    padding: 6px 8px; /* Optionally reduce padding on smaller screens */
+    padding: 3px 7px; /* Optionally reduce padding on smaller screens */
   }
   .container-padding {
     padding: 1.5rem;
@@ -43,11 +43,17 @@
 
 @media (max-width: 575px) {
   .central-container {
-    margin: 1rem;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .card-header {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
   }
 
   .container-padding {
-    padding: 2rem;
+    padding: 2rem 1rem;
   }
 
   .browser-dot {
@@ -57,7 +63,7 @@
 
   .fake-url-bar {
     width: 60%; /* Allows the URL bar to take more width on smaller screens */
-    padding: 5px 5px; /* Optionally reduce padding on smaller screens */
+    padding: 3px 6px; /* Optionally reduce padding on smaller screens */
   }
 
   .px-large {

@@ -1,21 +1,23 @@
 let prompt;
 let context;
-// Function to display the API response in the console
-let showAnswer = (response) => {
-  // Hide loading message
-  document.getElementById("guidelinesOutput").innerText = response.data.answer;
-};
-
+const currentYear = new Date().getFullYear();
+document.getElementById("current-year").textContent = currentYear;
 // Function to handle any errors during the API request
 let handleError = (error) => {
   console.error("Error during API request:", error);
+  document.getElementById("guidelinesOutput").innerText =
+    "Error loading guidelines.";
 };
 
 let handleFormSubmit = (event) => {
   event.preventDefault();
-  let selectedCategory = document.querySelector(
+  let selectedCategoryElement = document.querySelector(
     'input[name="category"]:checked'
-  ).value;
+  );
+  // Get the value of the selected radio button
+  let selectedCategory = selectedCategoryElement.value;
+
+  // Make the API request
   makeAPIRequest(selectedCategory);
 };
 
@@ -25,11 +27,25 @@ let makeAPIRequest = (category) => {
   let apiKey = "tc77416a9a6oe00ff484244bdff2d3b1";
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-  // Show loading message
-  document.getElementById("guidelinesOutput").innerText =
-    "Loading Accessibility Guidelines...";
+  // Remove the "d-none" class to make the content visible
+  const aiGeneratedContent = document.getElementById("aiGeneratedContent");
+  aiGeneratedContent.classList.remove("d-none");
+
+  // Show loading message and set focus to it
+  const loadingMessage = document.getElementById("guidelinesOutput");
+  loadingMessage.innerText = "Loading Accessibility Guidelines...";
+  loadingMessage.scrollIntoView({ behavior: "smooth" });
+
+  // Set focus to the loading message
+  // loadingMessage.focus();
 
   axios.get(apiURL).then(showAnswer).catch(handleError);
+};
+
+// Function to display the API response in the console
+let showAnswer = (response) => {
+  // Hide loading message
+  document.getElementById("guidelinesOutput").innerText = response.data.answer;
 };
 
 document

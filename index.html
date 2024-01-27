@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>AI Accessibility Generator</title>
+    <meta
+      name="description"
+      content="Optimize web accessibility with AI Accessibility Generator. This AI-driven tool offers easy, WCAG-compliant guidelines for creating inclusive web content. Ideal for developers and content creators prioritizing digital inclusivity."
+    />
 
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link
@@ -36,40 +40,38 @@
         </div>
         <section class="container-padding container w-90">
           <section class="introduction-section mb-3 mb-md-5">
-            <h1 class="text-center pb-2 pb-md-3">WCAG Generator</h1>
+            <h1 class="text-center pb-2 pb-md-3">AI Accessibility Generator</h1>
             <div class="text-container d-flex justify-content-center">
               <p class="text-start">
-                Welcome to the WCAG Generator! I'm here to help you make your
-                web content accessible to everyone, including people with
-                disabilities. The Web Content Accessibility Guidelines (WCAG)
-                are considered the standard in the industry to ensure that
-                digital content is inclusive and accessible for all. Start by
-                selecting a category, click the 'Generate Guidelines' button,
-                and receive tips that follow the WCAG standards. If you want to
-                explore beyond these basics, check out the official
+                Get started with creating universally accessible web content
+                using this tool, which aligns with the Web Content Accessibility
+                Guidelines (WCAG). Choose a category and click 'Generate
+                guidelines' for practical tips. For detailed insights, consult
+                the official
                 <a
                   href="https://www.w3.org/WAI/standards-guidelines/wcag/"
                   rel="noopener"
                 >
-                  WCAG guidelines</a
-                >. Also, keep in mind that accessibility standards can differ
-                internationally, so it's wise to consult local regulations to
-                ensure your content meets all necessary requirements.
+                  WCAG documentation.
+                </a>
+                &nbsp;Note: Accessibility regulations differ worldwide, so be
+                sure to check local standards.
               </p>
             </div>
           </section>
           <section class="form-section">
             <div class="flex-container">
               <img
-                src="images/marvin-meyer-SYTO3xs06fU-unsplash.jpg"
-                alt=""
-                class="img-medium rounded order-lg-2"
+                src="images/website.svg"
+                class="img-medium order-lg-2"
+                alt="Person navigating a website."
               />
               <form class="order-lg-1" id="guidelineForm">
-                <fieldset>
-                  <legend>
-                    <h2>Select a Category:</h2>
-                  </legend>
+                <fieldset
+                  aria-label="Select one Category:"
+                  aria-required="true"
+                >
+                  <legend>Select one Category:</legend>
                   <div class="form-group d-flex flex-column">
                     <div class="custom-radio">
                       <div class="form-check">
@@ -79,6 +81,7 @@
                           id="color"
                           name="category"
                           value="color"
+                          required
                         />
                         <label class="form-check-label" for="color"
                           >Colors</label
@@ -104,11 +107,11 @@
                         <input
                           class="form-check-input"
                           type="radio"
-                          id="font"
+                          id="form"
                           name="category"
-                          value="font"
+                          value="form"
                         />
-                        <label class="form-check-label" for="font">Fonts</label>
+                        <label class="form-check-label" for="form">Forms</label>
                       </div>
                     </div>
                     <div class="custom-radio">
@@ -139,14 +142,21 @@
                     </div>
                   </div>
                 </fieldset>
-                <button type="submit" class="btn btn-primary mt-3">
-                  Generate Guidelines
+                <button
+                  type="submit"
+                  class="btn btn-primary mt-3"
+                  aria-label="Submit category selection and generate guidelines"
+                >
+                  Generate guidelines
                 </button>
               </form>
             </div>
           </section>
-          <section id="aiGeneratedContent" class="results-section mt-3 mt-md-4">
-            <h3 class="text-center">Generated Accessibility Guidelines</h3>
+          <section
+            id="aiGeneratedContent"
+            class="results-section mt-3 mt-md-4 d-none"
+          >
+            <!-- <h3 class="text-center">Generated Accessibility Guidelines</h3> -->
             <p
               id="guidelinesOutput"
               class="p-3 border rounded text-start"
@@ -156,7 +166,11 @@
             </p>
           </section>
         </section>
-        <footer></footer>
+        <!-- <footer class="text-center pt-1">
+          <p id="footer-text">
+            &copy; <span id="current-year"></span> coded by Sarah VanTilburg
+          </p>
+        </footer> -->
       </section>
     </main>
     <script src="src/index.js"></script>
