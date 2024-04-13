@@ -1,6 +1,3 @@
-let prompt;
-let context;
-
 // Changing year in footer to current years
 const currentYear = new Date().getFullYear();
 document.getElementById("current-year").textContent = currentYear;
@@ -51,3 +48,6 @@ let showAnswer = (response) => {
 document
   .getElementById("guidelineForm")
   .addEventListener("submit", handleFormSubmit);
+
+// let prompt = `Please provide two accessibility guidelines related to ${category} in the format: 'Guideline: . Explanation: . WCAG 2.2 Reference with Compliance Level: .'`;
+// let context = `Focus on providing structured and concise responses for two guidelines. Include for each guideline its explanation and the corresponding WCAG 2.2 reference, specifying whether it falls under Level A, AA, or AAA compliance.`;
