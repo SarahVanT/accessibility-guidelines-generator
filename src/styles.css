@@ -57,11 +57,11 @@ footer {
   border-bottom-right-radius: 10px;
 }
 
-.central-container {
-  background-color: #fff; /* White background for the container */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*Optional: adds a subtle shadow */
-  margin: 3.125rem 10rem; /* Space around the container */
-}
+/* .central-container {
+  background-color: #fff; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  margin: 3.125rem 10rem; 
+} */
 
 a:link,
 a:visited {
@@ -95,9 +95,10 @@ a:focus {
 }
 
 .central-container {
-  background-color: #fff; /* White background for the container */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*Optional: adds a subtle shadow */
-  margin: 3.125rem 10rem; /* Space around the container */
+  /* White background for the container */
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 3.125rem 10rem;
   border-radius: 10px;
 }
 
