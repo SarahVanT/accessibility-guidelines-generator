@@ -187,7 +187,6 @@ a:focus {
 
 .custom-radio {
   display: inline-block;
-  /* Adjust the width and padding as desired */
   width: fit-content;
   padding: 0.313rem 0.838rem;
 }
